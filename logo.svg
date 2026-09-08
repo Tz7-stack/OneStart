@@ -1,1 +1,4 @@
+<!-- use these exact lines in <head> -->
+<link rel="icon" type="image/svg+xml" href="logo.svg">
+<img src="logo.svg" alt="OneStart logo" class="logo" width="40" height="40" />
 
