@@ -1,1 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>OneStart — Start here. Do more.</title>
+  <meta name="description" content="OneStart — Start here. Do more. A fast, private productivity dashboard with quick links, notes, todos, and timers to power your daily routine.">
+  <link rel="icon" type="image/svg+xml" href="/logo.svg">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="logo.svg" alt="OneStart logo" class="logo" width="40" height="40" />
+      <div>
+        <h1>OneStart</h1>
+        <p class="tagline">Start here. Do more.</p>
+      </div>
+    </div>
+
+    <div class="search-wrap">
+      <input id="search" class="search" placeholder="Search tools, links, notes..." autocomplete="off" />
+    </div>
+  </header>
+
+  <main class="layout">
+    <section id="quickLinks" class="card">
+      <h2>Quick Links</h2>
+      <div id="linksGrid" class="links-grid"></div>
+    </section>
+
+    <section id="recommendations" class="card">
+      <h2>Recommended Tools</h2>
+      <div id="toolContainer" class="tools-grid"></div>
+    </section>
+
+    <aside class="sidebar">
+      <section id="notes" class="card">
+        <h3>Notes</h3>
+        <textarea id="notesArea" rows="6" placeholder="Quick notes..."></textarea>
+        <div class="controls">
+          <button id="saveNotes">Save</button>
+          <button id="clearNotes">Clear</button>
+        </div>
+      </section>
+
+      <section id="todo" class="card">
+        <h3>Todo</h3>
+        <div class="todo-input">
+          <input id="todoText" placeholder="New task..." />
+          <button id="addTodo">Add</button>
+        </div>
+        <ul id="todoList" class="todo-list"></ul>
+      </section>
+
+      <section id="timer" class="card">
+        <h3>Timer</h3>
+        <div id="timerDisplay" class="timer-display">00:00</div>
+        <div class="controls">
+          <button id="startTimer">Start</button>
+          <button id="stopTimer">Stop</button>
+          <button id="resetTimer">Reset</button>
+        </div>
+      </section>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <small>OneStart • Start here. Do more.</small>
+  </footer>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
 
